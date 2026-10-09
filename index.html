@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 상반기 매출 대시보드</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <header class="dashboard-header">
+      <h1>2026 상반기 매출 대시보드</h1>
+      <p class="subtitle">1월 ~ 6월 월별 매출 현황 (예시 데이터)</p>
+    </header>
+
+    <section class="card">
+      <h2>월별 매출 그래프</h2>
+      <canvas id="salesChart" width="800" height="420"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>월별 매출 표</h2>
+      <table id="salesTable">
+        <thead>
+          <tr>
+            <th>월</th>
+            <th>매출(원)</th>
+            <th>전월 대비</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td>합계</td>
+            <td id="totalSales"></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
